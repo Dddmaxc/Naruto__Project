@@ -1,0 +1,97 @@
+// @mixin Body(
+//   $font-sizee,
+//   $font-familyy,
+//   $backgroundd,
+//   $background-sizee,
+//   $colorr,
+//   $backgro-color,
+//   $topp,
+//   $leftt
+// ) {
+//   font-size: 16px;
+//   font-family: $BodyText;
+//   background: url(./imges/Naruto.jpg) no-repeat;
+//   background-size: cover;
+//   color: $ColorTex;
+//   background: $BodyColor;
+//   top: 0;
+//   left: 0;
+// }
+@mixin fonSize {
+  width: 200px;
+  height: 260px;
+  font-family: $BodyText;
+}
+@mixin wrapper($SizeW, $SizeH, $Opacity) {
+  width: 220px;
+  height: 280px;
+  opacity: 1;
+}
+@mixin AllGallery__img($object, $displa, $align-item, $opacit, $transfor) {
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+  &:hover {
+    @include wrapper(220px, 280px, 1);
+  }
+}
+@mixin History($colors) {
+  color: #fff;
+}
+@mixin HistoryIntroAfter(
+  $cont,
+  $displayy,
+  $widthh,
+  $heightt,
+  $backroundd,
+  $positionn,
+  $topp,
+  $leftt,
+  $z
+) {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $BodyColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+@mixin HistoryIntro($min-heightt, $overfloww, $positionn, $background) {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  &::after {
+    @include HistoryIntroAfter(
+      "",
+      block,
+      100%,
+      100%,
+      $BodyColor,
+      absolute,
+      0,
+      0,
+      2
+    );
+  }
+}
+@mixin HistoryIntro__content($widthh, $heightt, $positionn, $topp, $leftt, $z) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+@mixin HisroryVideo__media($widthh, $height, $position, $topp, $leftt) {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

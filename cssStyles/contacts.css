@@ -1,0 +1,29 @@
+body {
+  font-size: 20px;
+  font-family: "Nanum Myeongjo", serif;
+  background: url(./imges/fon3.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chek {
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 1px solid #fff;
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  margin-left: 45px;
+}

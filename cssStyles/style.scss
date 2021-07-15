@@ -1,0 +1,138 @@
+@import "scssMixins";
+@import "scssPeremens";
+
+body {
+  font-size: 16px;
+  font-family: $BodyText;
+  background: url(./imges/Naruto.jpg) no-repeat;
+  background-size: cover;
+  color: $ColorText;
+  background-color: $BodyColor;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+h1 {
+  font-family: $BodyText;
+  font-size: 100px;
+}
+
+ul,
+li > a {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  color: $ColorText;
+  text-shadow: rgb(199, 19, 34) 1px 0 10px;
+}
+.aaa {
+  display: flex;
+  transform: 100ms linear;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.podm,
+.podm1 {
+  display: flex;
+  align-items: center;
+  margin-right: 400px;
+}
+.podm1,
+.logo {
+  margin-right: 40px;
+}
+.menu {
+  background: #000;
+  background-color: $BodyColor;
+  margin: 0;
+}
+.logo {
+  width: 120px;
+  height: 100px;
+}
+
+.footer {
+  background-color: $BodyColor;
+}
+
+.fff {
+  display: flex;
+  transform: 100ms linear;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+img {
+  width: 45px;
+  height: 35px;
+  margin: 15px 0 10px;
+}
+.text {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+.tel {
+  margin-top: 21px;
+  color: $justcolor;
+  display: flex;
+  transform: 100ms linear;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.section {
+  background-color: $BodyColor;
+}
+.wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-gap: 1em;
+  grid-auto-rows: 300px;
+}
+figure {
+  background-color: rgba(39, 35, 35, 0.5);
+}
+.wrapper {
+  img {
+    @include fonSize;
+  }
+}
+.gallery__img1 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.gallery__img2 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.gallery__img3 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.gallery__img4 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.gallery__img5 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.gallery__img6 {
+  @include AllGallery__img(cover, block, center, 0.5, all 0.3s ease);
+}
+.color {
+  color: $justcolor;
+}

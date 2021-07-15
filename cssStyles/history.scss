@@ -1,0 +1,40 @@
+@import "scssMixins";
+@import "scssPeremens";
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+h1,
+h2,
+h3 {
+  @include History(#fff);
+}
+.intro {
+  @include HistoryIntro(100vh, hidden, relative, #000);
+}
+.video {
+  position: relative;
+  padding-bottom: 56 0.25%;
+}
+.video__media {
+  @include HisroryVideo__media(100%, auto, absolute, 0, 0);
+}
+.intro__content {
+  @include HistoryIntro__content(100%, 100%, absolute, 0, 0, 3);
+}
+.intro__title {
+  @include History(#fff);
+}
+.text {
+  @include History(#fff);
+}
+.text2 {
+  @include History(#fff);
+}
+.text3 {
+  @include History(#fff);
+}
+.text4 {
+  @include History(#fff);
+}
