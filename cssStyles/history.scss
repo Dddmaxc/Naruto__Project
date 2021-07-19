@@ -22,6 +22,7 @@ h3 {
 }
 .intro__content {
   @include HistoryIntro__content(100%, 100%, absolute, 0, 0, 3);
+  overflow: scroll;
 }
 .intro__title {
   @include History(#fff);
@@ -37,4 +38,14 @@ h3 {
 }
 .text4 {
   @include History(#fff);
+}
+@media only screen and(max-width: 1200px) {
+}
+@media only screen and(max-width: 992px) {
+}
+@media only screen and(max-width: 768px) {
+}
+@media only screen and(max-width: 480px) {
+}
+@media only screen and(max-width: 320px) {
 }

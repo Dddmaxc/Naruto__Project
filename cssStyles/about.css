@@ -45,3 +45,38 @@ img {
   width: 230px;
   height: 300px;
 }
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-size: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div {
+    display: block;
+    font-size: 15px;
+    padding-left: 2px;
+  }
+
+  .main {
+    background-color: black;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background-size: auto;
+  }
+
+  .main {
+    background-color: black;
+  }
+}
+@media only screen and (max-width: 480px) and (max-width: 320px) {
+  body {
+    background-size: auto;
+  }
+
+  div {
+    display: block;
+  }
+}

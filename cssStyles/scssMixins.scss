@@ -1,30 +1,10 @@
-// @mixin Body(
-//   $font-sizee,
-//   $font-familyy,
-//   $backgroundd,
-//   $background-sizee,
-//   $colorr,
-//   $backgro-color,
-//   $topp,
-//   $leftt
-// ) {
-//   font-size: 16px;
-//   font-family: $BodyText;
-//   background: url(./imges/Naruto.jpg) no-repeat;
-//   background-size: cover;
-//   color: $ColorTex;
-//   background: $BodyColor;
-//   top: 0;
-//   left: 0;
-// }
 @mixin fonSize {
-  width: 200px;
-  height: 260px;
+  width: 300px;
+  height: 100%;
   font-family: $BodyText;
 }
-@mixin wrapper($SizeW, $SizeH, $Opacity) {
-  width: 220px;
-  height: 280px;
+@mixin wrapper($transformm, $Opacity) {
+  transform: scale(1.2);
   opacity: 1;
 }
 @mixin AllGallery__img($object, $displa, $align-item, $opacit, $transfor) {
@@ -34,7 +14,10 @@
   opacity: 0.5;
   transition: all 0.3s ease-in;
   &:hover {
-    @include wrapper(220px, 280px, 1);
+    box-shadow: 0 0 10px #e9e3e3;
+  }
+  &:hover {
+    @include wrapper(scale(1.2), 1);
   }
 }
 @mixin History($colors) {

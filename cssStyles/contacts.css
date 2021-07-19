@@ -15,7 +15,8 @@ body {
 .chek {
   margin-top: 50px;
   margin-left: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 400px;
 }
 
@@ -26,4 +27,22 @@ a {
 
 ul {
   margin-left: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: url(./imges/naruto_ship.jpg) no-repeat;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background: url(./imges/naruto_ship.jpg) no-repeat;
+    background-size: auto;
+  }
+
+  .chek {
+    background-color: rgba(255, 82, 2, 0.7);
+    margin: 0 auto;
+    width: 300px;
+  }
 }
